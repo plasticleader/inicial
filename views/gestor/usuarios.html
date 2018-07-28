@@ -1,0 +1,17 @@
+{{extend 'plantilla.html'}}
+<span class="m-menu__link-text">
+	<i class="m-menu__link-icon   flaticon-users"></i> 
+	{{=response.title}}
+</span>
+<hr>
+<!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#m_modal_5">Launch Modal</button>		
+<hr> -->		
+<!-- <a href="https://www.freepik.es/vector-grat''p'pp is/conjunto-de-iconos-para-mapas_971304.htm">Diseñado por Freepik</a>			 -->
+<!-- <a href="http://www.freepik.com">Designed by kraphix / Freepik</a> -->
+<div id="{{=response.title}}">
+	{{=pl_usuarios}}	
+</div>
+
+{{block page_js}}
+	<script src="{{=URL('static','js/gestor/usuarios.js')}}"></script>
+{{end page_js}}
